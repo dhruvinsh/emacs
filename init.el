@@ -22,6 +22,7 @@
 (add-hook 'emacs-startup-hook #'pyxis/display-startup-time)
 
 (require 'plugins)
+(require 'colorscheme)
 
 (provide 'init)
 ;; Local Variables:

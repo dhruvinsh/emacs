@@ -21,6 +21,7 @@
 ;; UI
 (use-package autothemer
   :ensure t)
-(load-theme 'catppuccin-macchiato t)
+(use-package catppuccin-theme)
+
 
 (provide 'plugins)
