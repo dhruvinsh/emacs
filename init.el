@@ -3,7 +3,18 @@
 
 ;; This is my personal config for emacs aka Pyxis
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+;;; Code:
+
+;; Some basic settings
+(setq frame-title-format '("%b"))
+(setq ring-bell-function 'ignore)
+(setq use-short-answers t)
+
+;; always start *scratch*
+(setq initial-buffer-choice t)
+
+;; loading my personal config directory
+(add-to-list 'load-path (expand-file-name "pyxis-lisp" user-emacs-directory))
 
 ;; Adjust garbage collection thresholds during startup, and thereafter
 (let ((normal-gc-cons-threshold (* 20 1024 1024))
@@ -24,7 +35,6 @@
 (require 'plugins)
 (require 'colorscheme)
 
-(provide 'init)
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
