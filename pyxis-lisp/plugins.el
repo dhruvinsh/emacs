@@ -76,4 +76,12 @@
   :init
   (global-corfu-mode))
 
+;; key bindings
+(use-package which-key
+  :init
+  (which-key-mode))
+
+;; Supercharge Git
+(use-package magit)
+
 (provide 'plugins)
